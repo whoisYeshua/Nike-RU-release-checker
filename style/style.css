@@ -47,6 +47,24 @@ table {
     border-spacing: 0;
 }
 
+
+/* Trade Gothic ProCyr */
+@font-face {
+    font-family: "Trade Gothic ProCyr";
+    src: url("fonts/TradeGothic.woff2") format("woff2");
+}
+/* Helvetica Neue Regular*/
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("fonts/HelveticaNeue.woff2") format("woff2");
+}
+
+#d {
+    font-family: "Trade Gothic ProCyr", fantasy;
+    font-size: 20px;
+}
+
+
 button,
 button:active,
 button:focus {
@@ -86,8 +104,10 @@ body {
 }
 
 header {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
     flex: none;
-    width: 100%;
     border-bottom: 1px solid #e5e5e5;
     padding: 15px;
 }
@@ -120,4 +140,8 @@ footer {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.container {
+    height: 35px;
 }
