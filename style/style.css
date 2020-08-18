@@ -60,8 +60,7 @@ table {
 }
 
 #d {
-    font-family: "Trade Gothic ProCyr", fantasy;
-    font-size: 20px;
+    /*font-family: "Trade Gothic ProCyr", fantasy;*/
 }
 
 
@@ -77,6 +76,7 @@ button:focus {
     border: none;
     color: white;
     text-align: center;
+    font-family: "Trade Gothic ProCyr", sans-serif;
     font-size: 16px;
 }
 
@@ -86,7 +86,8 @@ button:hover {
 
 input {
     width: 250px;
-    height: 40px;
+    font-family: "Trade Gothic ProCyr", sans-serif;
+    /*max-height: 40px;*/
     border-radius: 2px;
     font-size: 16px;
 }
@@ -100,38 +101,44 @@ body {
     box-sizing: border-box;
     height: 100%;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
 
 header {
-    display: flex;
-    flex-flow: row;
-    align-items: flex-end;
     flex: none;
+    padding: 10px 15px;
     border-bottom: 1px solid #e5e5e5;
-    padding: 15px;
+
 }
 
 main {
+    padding: 10px 15px;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column;
     justify-content: flex-start;
     flex: 1 0 auto;
 }
 
 footer {
-    background-color: pink;
     flex: none;
-    width: 100%;
+    padding: 10px 15px;
+    background-color: #111;
 
 }
 
 #input-area {
     flex: 1 0 auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+#input-wrapper {
+    width: 400px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
 }
 
 #output-area {
@@ -140,8 +147,24 @@ footer {
     flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
 }
 
-.container {
-    height: 35px;
+.wrapper {
+    max-width: calc(50% + 115px);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: "Trade Gothic ProCyr", sans-serif;
+    font-size: 24px;
+}
+
+.wrapper-footer {
+    width: 234px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
 }
