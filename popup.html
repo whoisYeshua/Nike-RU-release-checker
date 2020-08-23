@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="style/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="style/favicon/favicon.ico" type="image/x-icon">
     <title>Nike-RU-console-release-checker</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
@@ -19,43 +21,18 @@
                     </path>
                 </svg>
             </div>
-            <p id="d">NIKE RU RELEASE CHECKER</p>
+            <p>NIKE RU RELEASE CHECKER</p>
         </div>
     </header>
     <main>
-        <div id='input-area'>
-            <div id="input-wrapper">
-                <input type="url" placeholder="PAST PRODUCT URL" id='url'>
+        <div class='input-area'>
+            <div class="input-wrapper">
+                <input id='url' type="url" placeholder="PAST PRODUCT URL">
                 <button id='check'>CHECK URL</button>
             </div>
         </div>
-        <div id="output-area">
+        <div class="output-area">
             <p>or check console ⌥ + ⌘ + i</p>
-            <div class="product-info">
-                <h1 class="subtitle">WMNS AIR JORDAN 3 RETRO</h1>
-                <h5 class="title">Laser Orange</h5>
-                <div class="productId">79eed638-ae2d-5092-895f-5994249274a2</div>
-                <div class="product-image">
-                    <img src="https://secure-images.nike.com/is/image/DotCom/CK9246_108" alt="product image">
-                </div>
-                <div class="sizes">
-                    <div class="7">US 7</div>
-                    <div class="7.5">US 7.5</div>
-                    <div class="8">US 8</div>
-                    <div class="8.5">US 8.5</div>
-                    <div class="9">
-                        <span>US 9</span>
-                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="5" cy="5" r="5" fill="#FFE380"/>
-                        </svg>
-                    </div>
-                    <div class="9.5">US 9.5</div>
-                    <div class="10">US 10</div>
-                </div>
-
-
-            </div>
-
         </div>
     </main>
     <footer>
@@ -66,7 +43,15 @@
                data-icon="octicon-star" aria-label="Star whoisYeshua/Nike-RU-console-release-checker on GitHub">Star</a>
         </div>
     </footer>
-    <script src="popup.js"></script>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <main class="modal__content" id="modal-1-content"></main>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/micromodal.min.js"></script>
+    <script src="scripts/popup.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 
