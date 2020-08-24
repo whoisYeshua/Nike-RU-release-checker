@@ -153,7 +153,7 @@ function output(store) {
     })
 }
 
-document.getElementById('check').addEventListener('click', function (){
+document.getElementById('check').addEventListener('click', function (event){
     let url = document.getElementById('url').value
 
     if (url) {
@@ -251,7 +251,7 @@ function showProduct(productSlug) {
                         document.querySelector('.output-area').insertAdjacentHTML('beforeend', productInfo)
                         show(document.querySelector('.product-info'))
                     } else {
-                        hide(document.querySelector('.product-info'))
+                        hideBlock('.product-info')
                         setTimeout(() => {
                             document.querySelector('.output-area').insertAdjacentHTML('beforeend', productInfo)
                             show(document.querySelector('.product-info'))
@@ -275,14 +275,21 @@ function errorMsg (msg) {
     error.classList.add("error", "show")
     document.querySelector('.output-area').prepend(error)
     setTimeout(()=> {
-        hide(error)
+        hideErr(error)
     }, 2500)
 }
 
-function hide(block) {
-    block.classList.add("hide");
+function hideErr(error) {
+    error.classList.add("hide");
     setTimeout(()=> {
-        block.remove();
+        error.remove();
+    }, 400)
+}
+
+function hideBlock(block) {
+    document.querySelector(`${block}`).classList.add("hide");
+    setTimeout(()=> {
+        document.querySelector(`${block}`).remove();
     }, 400)
 }
 
