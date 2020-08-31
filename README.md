@@ -18,13 +18,17 @@ the region, select the appropriate one at `marketplace()` & `language()`
 ![Imgur](https://i.imgur.com/PUr6gIS.jpg)
 
 ## UI preview:
+[**Demo**](https://nike-ru-release-checker-by-whoisyeshua.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d7892ce3-2f26-46e4-ae7d-f7e5cadb15a6/deploy-status)](https://app.netlify.com/sites/nike-ru-release-checker-by-whoisyeshua/deploys)
+
 ![Imgur](https://i.imgur.com/nRH2Ipo.jpg)
 
-#### Stock description:
+### Stock description:
 
-| Color         | Description   |
-| ------------- | ------------- |
-| <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle style="fill: #FF2C7D" cx="5" cy="5" r="5"/></svg> | Low Stock  |
-| <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle style="fill: #F8D84F" cx="5" cy="5" r="5"/></svg> | Medium Stock |  
-| <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle style="fill: #3DE716" cx="5" cy="5" r="5"/></svg>  | Low Stock  |
-| <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle style="fill: #151E11" cx="5" cy="5" r="5"/></svg>  | Not announce or OOS           |
+| Color                                     | Description           |
+| :---------------------------------------: | :-------------------: |
+| ![Imgur](https://i.imgur.com/5LKBB7p.png) | Low Stock             |
+| ![Imgur](https://i.imgur.com/sIEiTTj.png) | Medium Stock          |  
+| ![Imgur](https://i.imgur.com/v7V9REI.png) | High Stock            |
+| ![Imgur](https://i.imgur.com/CcWn5d7.png) | Not announce or OOS   |
