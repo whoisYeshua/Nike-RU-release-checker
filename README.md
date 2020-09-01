@@ -1,4 +1,4 @@
-# Nike RU stock checker
+# Nike RU release checker
 
 ## About:
 Script that accesses the Nike API to get product information from the main feed and stores it at localstorage. 
