@@ -31,5 +31,5 @@ the region, select the appropriate one at `marketplace()` & `language()`
 | ![Imgur](https://i.imgur.com/5LKBB7p.png) | Low Stock             |
 | ![Imgur](https://i.imgur.com/sIEiTTj.png) | Medium Stock          |  
 | ![Imgur](https://i.imgur.com/v7V9REI.png) | High Stock            |
-| ![Imgur](https://imgur.com/MdCKT4u.png)   | Not announce          |
+| ![Imgur](https://imgur.com/sg2YD4N.png)   | Not announce          |
 | ![Imgur](https://i.imgur.com/CcWn5d7.png) | OOS                   |
