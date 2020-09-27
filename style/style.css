@@ -222,7 +222,11 @@ footer {
     fill: #3DE716;
 }
 
-.na, .oos {
+.na {
+    fill: #737373;
+}
+
+.oos {
     fill: #151E11;
 }
 

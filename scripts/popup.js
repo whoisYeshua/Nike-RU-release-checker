@@ -183,6 +183,8 @@ function showProduct(productSlug) {
                             modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">GS</button>`
                         } else if (model.modelName.includes('PS')) {
                             modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">PS</button>`
+                        } else if (model.modelName.includes('TD')) {
+                            modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">TD</button>`
                         } else {
                             modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">ADULT</button>`
                         }
