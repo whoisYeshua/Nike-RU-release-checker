@@ -11,6 +11,7 @@ let url = new URL ('https://api.nike.com/product_feed/threads/v2/')
        url.searchParams.append('count','14')
        url.searchParams.append('filter','marketplace(RU)')
        url.searchParams.append('filter','language(ru)')
+       url.searchParams.append('filter','channelId(010794e5-35fe-4e32-aaff-cd2c74f89d61)')
 ```
 If you need to increase the number of cached products simply increase `count` param, also, if you need to change 
 the region, select the appropriate one at `marketplace()` & `language()`
