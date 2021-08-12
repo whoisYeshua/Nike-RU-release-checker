@@ -291,17 +291,17 @@ function showProduct(productSlug) {
             productInfo += `</svg></div>`
           }
           productInfo += `</div></div>`
-          if (document.querySelector('.output-area p') !== null) {
-            document.querySelector('.output-area p').remove()
+          if (document.querySelector('.main__output p') !== null) {
+            document.querySelector('.main__output p').remove()
             document
-              .querySelector('.output-area')
+              .querySelector('.main__output')
               .insertAdjacentHTML('beforeend', productInfo)
             show(document.querySelector('.product-info'))
           } else {
             hideBlock('.product-info')
             setTimeout(() => {
               document
-                .querySelector('.output-area')
+                .querySelector('.main__output')
                 .insertAdjacentHTML('beforeend', productInfo)
               show(document.querySelector('.product-info'))
             }, 400)
@@ -322,7 +322,7 @@ function errorMsg(msg) {
   let error = document.createElement('p')
   error.innerHTML = msg
   error.classList.add('error', 'show')
-  document.querySelector('.output-area').prepend(error)
+  document.querySelector('.main__output').prepend(error)
   setTimeout(() => {
     hideErr(error)
   }, 2500)
