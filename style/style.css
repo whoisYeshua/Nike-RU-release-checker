@@ -166,9 +166,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.btn,
-.btn:active,
-.btn:focus {
+.btn {
   font-family: 'Trade Gothic ProCyr', sans-serif;
   font-size: 16px;
 
@@ -183,6 +181,7 @@ body::-webkit-scrollbar {
   border-radius: 2px;
   outline: none;
   background-color: #111;
+  text-transform: uppercase;
 }
 
 .btn:hover {
@@ -491,7 +490,6 @@ body::-webkit-scrollbar {
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  text-transform: none;
 
   border-width: 0;
   border-style: none;
