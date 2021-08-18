@@ -64,7 +64,7 @@ function updateStorage() {
     .catch(error => {
       if (error instanceof TypeError) {
         const paragraph = `<p>Due to new Nike CORS policy this method doesn\`t work. Check new solution at my new repo</p>`
-        const modalBtn = `<a class="btn modal__btn" data-micromodal-close href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution">Check</a>`
+        const modalBtn = `<a class="btn modal__btn" href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution">Check</a>`
         document
           .querySelector('main.modal__content')
           .insertAdjacentHTML('afterbegin', paragraph)
