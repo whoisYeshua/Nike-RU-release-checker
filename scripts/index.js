@@ -61,14 +61,14 @@ function updateStorage() {
       localStorage.setItem('store', JSON.stringify(store))
       output(JSON.parse(localStorage.getItem('store')))
     })
-    .catch(e => {
-      console.error(e)
-      if (e.message === 'Failed to fetch') {
-        const span = `<p>Due to new Nike CORS policy this method doesn\`t work. Check new solution at link below</p>`
-        const modalBtn = `<a class="btn modal__btn" data-micromodal-close aria-label="Open Repo" href="https://github.com/whoisYeshua/nike-release-checker">Check</a>`
+    .catch(error => {
+      console.error(error)
+      if (error.message === 'Failed to fetch') {
+        const paragraph = `<p>Due to new Nike CORS policy this method doesn\`t work. Check new solution at my new repo</p>`
+        const modalBtn = `<a class="btn modal__btn" data-micromodal-close href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution">Check</a>`
         document
           .querySelector('main.modal__content')
-          .insertAdjacentHTML('afterbegin', span)
+          .insertAdjacentHTML('afterbegin', paragraph)
         document
           .querySelector('main.modal__content')
           .insertAdjacentHTML('beforeend', modalBtn)
@@ -108,7 +108,7 @@ async function getProductId() {
         'color: white; background: red; font: 16px sans-serif; padding: 5px;',
         resp.status
       )
-      throw new Error(`Error in fetch - ${resp.status}`)
+      throw new Error(`Fetch error - ${resp.status}`)
     }
   } catch (error) {
     throw error
@@ -219,13 +219,13 @@ function showProduct(productSlug) {
             let modalBtn
 
             if (model.modelName.includes('GS')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">GS</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Grade school sizes">GS</button>`
             } else if (model.modelName.includes('PS')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">PS</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Pre-school sizes">PS</button>`
             } else if (model.modelName.includes('TD')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">TD</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Toddler sizes">TD</button>`
             } else {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Choose size chart">ADULT</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Adult sizes">ADULT</button>`
             }
             console.log(modalBtn)
             document
