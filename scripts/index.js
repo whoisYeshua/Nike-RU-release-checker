@@ -62,8 +62,7 @@ function updateStorage() {
       output(JSON.parse(localStorage.getItem('store')))
     })
     .catch(error => {
-      console.error(error)
-      if (error.message === 'Failed to fetch') {
+      if (error instanceof TypeError) {
         const paragraph = `<p>Due to new Nike CORS policy this method doesn\`t work. Check new solution at my new repo</p>`
         const modalBtn = `<a class="btn modal__btn" data-micromodal-close href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution">Check</a>`
         document
