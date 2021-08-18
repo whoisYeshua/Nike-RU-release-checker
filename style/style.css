@@ -421,6 +421,9 @@ body::-webkit-scrollbar {
 
   justify-content: center;
   align-items: center;
+
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
 }
 
 .modal__container {
@@ -466,6 +469,7 @@ body::-webkit-scrollbar {
   line-height: 1.5;
 
   display: flex;
+  gap: 10px;
 
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -482,8 +486,6 @@ body::-webkit-scrollbar {
   line-height: 2.5;
 
   overflow: visible;
-
-  margin: 10px;
 
   transition: -webkit-transform 0.25s ease-out;
   transition: transform 0.25s ease-out;
