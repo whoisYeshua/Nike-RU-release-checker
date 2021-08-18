@@ -131,13 +131,13 @@ table {
 /* Trade Gothic ProCyr */
 @font-face {
   font-family: 'Trade Gothic ProCyr';
-  src: url('fonts/TradeGothic.woff2') format('woff2');
+  src: url('/fonts/TradeGothic.woff2') format('woff2');
   font-display: swap;
 }
 /* Helvetica Neue Regular*/
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('fonts/HelveticaNeue.woff2') format('woff2');
+  src: url('/fonts/HelveticaNeue.woff2') format('woff2');
   font-display: swap;
 }
 
