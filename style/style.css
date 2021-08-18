@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
   border: none;
   border-radius: 2px;
   outline: none;
-  background-color: #111;
+  background-color: black;
   text-transform: uppercase;
 }
 
@@ -265,7 +265,7 @@ body::-webkit-scrollbar {
 .footer {
   padding: 10px 15px;
 
-  background-color: #111;
+  background-color: black;
 
   flex: none;
 }
@@ -286,7 +286,7 @@ body::-webkit-scrollbar {
   font-family: 'Trade Gothic ProCyr', sans-serif;
   font-size: 16px;
 
-  border-color: #111;
+  border-color: black;
   outline: none;
 }
 
@@ -430,7 +430,7 @@ body::-webkit-scrollbar {
   max-height: 100vh;
 
   border-radius: 2px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .modal__header {
