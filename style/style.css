@@ -1,7 +1,9 @@
-/* Trade Gothic ProCyr */
+/* Trade Gothic */
 @font-face {
-  font-family: 'Trade Gothic ProCyr';
+  font-family: 'Trade Gothic';
   src: url('/fonts/TradeGothic.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
   font-display: swap;
 }
 /* Helvetica Neue Regular*/
@@ -20,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Trade Gothic ProCyr', sans-serif;
+  font-family: 'Trade Gothic', sans-serif;
 
   display: flex;
 
@@ -37,7 +39,6 @@ body::-webkit-scrollbar {
 }
 
 .btn {
-  font-family: 'Trade Gothic ProCyr', sans-serif;
   font-size: 16px;
 
   width: 100px;
@@ -116,8 +117,6 @@ body::-webkit-scrollbar {
 }
 
 .main__input-block {
-  font-family: 'Trade Gothic ProCyr', sans-serif;
-
   display: flex;
   gap: 20px;
 
@@ -157,11 +156,9 @@ body::-webkit-scrollbar {
 }
 
 .input {
-  /* width auto; */
   flex-grow: 1;
   border-radius: 2px;
 
-  font-family: 'Trade Gothic ProCyr', sans-serif;
   font-size: 16px;
 
   border-color: black;
