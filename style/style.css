@@ -17,46 +17,14 @@ a {
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   font-family: 'Trade Gothic', sans-serif;
 
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 
   box-sizing: border-box;
-  height: 100%;
-
-  flex-flow: column;
-  -ms-overflow-style: none; /*Hide scrollbar for IE and Edge */
-  scrollbar-width: none; /*Hide scrollbar for Firefox */
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
-.btn {
-  font-size: 16px;
-
-  width: 100px;
-  height: 40px;
-
-  cursor: pointer;
-  text-align: center;
-
-  color: white;
-  border: none;
-  border-radius: 2px;
-  outline: none;
-  background-color: black;
-  text-transform: uppercase;
-}
-
-.btn:hover {
-  background-color: #8d8d8d;
+  height: 100vh;
 }
 
 :focus {
@@ -82,7 +50,7 @@ body::-webkit-scrollbar {
 
   display: flex;
 
-  max-width: calc(50% + 115px);
+  max-width: calc(50vw + 115px);
 
   flex-flow: row;
   justify-content: space-between;
@@ -102,7 +70,6 @@ body::-webkit-scrollbar {
 
   flex-flow: column;
   justify-content: flex-start;
-  flex: 1 0 auto;
 }
 
 .main__input {
@@ -143,8 +110,6 @@ body::-webkit-scrollbar {
   padding: 10px 15px;
 
   background-color: black;
-
-  flex: none;
 }
 
 .footer__wrapper {
@@ -153,6 +118,27 @@ body::-webkit-scrollbar {
   flex-flow: row;
   justify-content: center;
   gap: 20px;
+}
+
+.btn {
+  font-size: 16px;
+
+  width: 100px;
+  height: 40px;
+
+  cursor: pointer;
+  text-align: center;
+
+  color: white;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: #8d8d8d;
 }
 
 .input {
