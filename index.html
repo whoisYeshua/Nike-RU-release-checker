@@ -108,10 +108,12 @@
           let outputBlock = document.querySelector('.main__output')
           switch (window.navigator.platform) {
             case 'Win32':
-              outputBlock.innerHTML = '<p>or check console Ctrl + Shift + j</p>'
+              outputBlock.innerHTML =
+                '<p>or check console <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd></p>'
               break
             case 'MacIntel':
-              outputBlock.innerHTML = '<p>or check console ⌥ + ⌘ + j</p>'
+              outputBlock.innerHTML =
+                '<p>or check console <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>j</kbd></p>'
               break
             default:
               outputBlock.innerHTML = '<p>or check console</p>'
