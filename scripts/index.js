@@ -64,7 +64,7 @@ function updateStorage() {
     .catch(error => {
       if (error instanceof TypeError) {
         const paragraph = `<p>Due to new Nike CORS policy this method doesn\`t work. Check new solution at my new repo</p>`
-        const modalBtn = `<a class="btn modal__btn" href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution">Check</a>`
+        const modalBtn = `<a class="btn modal__btn" href="https://github.com/whoisYeshua/nike-release-checker" title="Open GitHub repository" aria-label="Github repository with new solution.">Check</a>`
         document
           .querySelector('main.modal__content')
           .insertAdjacentHTML('afterbegin', paragraph)
@@ -218,13 +218,13 @@ function showProduct(productSlug) {
             let modalBtn
 
             if (model.modelName.includes('GS')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Grade school sizes">GS</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Grade school sizes.">GS</button>`
             } else if (model.modelName.includes('PS')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Pre-school sizes">PS</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Pre-school sizes.">PS</button>`
             } else if (model.modelName.includes('TD')) {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Toddler sizes">TD</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Toddler sizes.">TD</button>`
             } else {
-              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Adult sizes">ADULT</button>`
+              modalBtn = `<button class="modal__btn" data-model="${model.modelName}" data-micromodal-close aria-label="Adult sizes.">ADULT</button>`
             }
             console.log(modalBtn)
             document
