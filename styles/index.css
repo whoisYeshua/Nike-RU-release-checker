@@ -13,45 +13,57 @@
   font-display: swap;
 }
 
+::placeholder {
+  color: var(--placeholder);
+}
+
 a {
   text-decoration: none;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Trade Gothic', sans-serif;
+  background-color: var(--primay);
+  color: var(--accent);
 
   display: grid;
   grid-template-rows: auto 1fr auto;
 
   box-sizing: border-box;
-  height: 100vh;
+  min-height: 100%;
 }
 
 kbd {
-  background-color: #fafbfc;
-  border: 1px solid #d1d5da;
+  background-color: var(--kbd-background);
+  border: 1px solid var(--kbd-border);
   border-radius: 6px;
-  box-shadow: inset 0 -1px 0 #d1d5da;
+  box-shadow: inset 0 -1px 0 var(--kbd-border);
   font: inherit;
-  padding: 3px 5px;
+  padding: 6px 6px;
 }
 
-:focus {
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+input:focus ,.btn:focus {
+  outline-offset: 0.125rem;
+  outline: 2px solid var(--outline);
 }
 
-:focus:not(:focus-visible) {
-  box-shadow: none;
+input:focus:not(:focus-visible),.btn:focus:not(:focus-visible) {
+  outline: none;
 }
 
-:focus-visible {
-  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.25);
+input:focus-visible ,.btn:focus-visible {
+  outline-offset: 0.125rem;
+  outline: 2px solid var(--outline);
 }
 
 .header {
   padding: 10px 25px;
 
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--header-border);
 }
 
 .header__wrapper {
@@ -118,7 +130,7 @@ kbd {
 .footer {
   padding: 10px 15px;
 
-  background-color: black;
+  background-color: var(--footer);
 }
 
 .footer__wrapper {
@@ -138,26 +150,32 @@ kbd {
   cursor: pointer;
   text-align: center;
 
-  color: white;
+  color: var(--primay);
   border: none;
   border-radius: 2px;
-  outline: none;
-  background-color: black;
+  background-color: var(--button-bg);
   text-transform: uppercase;
 }
 
 .btn:hover {
-  background-color: #8d8d8d;
+  background-color: var(--button-bg-hover);
+  outline-color: var(--button-bg-hover);
+}
+
+.btn:active {
+  background-color: var(--strong-grey);
+  outline-color: var(--strong-grey);
 }
 
 .input {
   flex-grow: 1;
   border-radius: 2px;
+  color: var(--accent);
 
   font-size: 16px;
 
-  border-color: black;
-  outline: none;
+  background-color: var(--primay);
+  border: 2px solid var(--accent);
 }
 
 .product-info {
@@ -172,7 +190,7 @@ kbd {
   letter-spacing: 1px;
   text-transform: uppercase;
 
-  color: #6d6d6d;
+  color: var(--strong-grey);
 }
 
 .title {
@@ -217,13 +235,14 @@ kbd {
 }
 
 .na {
-  fill: #ababab;
+  fill: var(--product-na)
 }
 
 .oos {
-  fill: #151e11;
+  fill: var(--accent);
 }
 
 .error {
   color: red;
 }
+

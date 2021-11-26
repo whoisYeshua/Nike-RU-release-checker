@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Simple Nike RU stock checker" />
+    <!-- Open Graph Meta -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nike RU release checker" />
     <meta property="og:site_name" content="Simple Nike RU stock checker" />
@@ -15,51 +16,70 @@
     />
     <meta
       property="og:image"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/style/images/icons/180.png"
+      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/styles/images/icons/180.png"
     />
+    <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nike RU release checker" />
     <meta name="twitter:description" content="Simple Nike RU stock checker" />
-    <meta
-      name="twitter:site"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/"
-    />
+    <meta name="twitter:creator" content="@YeshuaWhois" />
     <meta
       name="twitter:image"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/style/images/icons/180.png"
+      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/styles/images/icons/180.png"
     />
-    <script defer src="scripts/micromodal.min.js"></script>
-    <script defer src="scripts/index.js"></script>
-    <script defer src="https://buttons.github.io/buttons.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="style/modal.css" />
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <!-- Styles -->
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#F7F7F7"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#161716"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/modal.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/light.css"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="styles/dark.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="stylesheet" type="text/css" href="styles/index.css" />
+    <!-- Icons -->
     <link
       rel="icon"
       type="image/png"
       sizes="180x180"
-      href="/style/images/icons/180.png"
+      href="/styles/images/icons/180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/style/images/icons/32.png"
+      href="/styles/images/icons/32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/style/images/icons/16.png"
+      href="/styles/images/icons/16.png"
     />
     <link
       rel="icon"
       type="image/svg+xml"
       sizes="any"
-      href="/style/images/icons/swoosh.svg"
+      href="/styles/images/icons/swoosh.svg"
     />
-    <link rel="apple-touch-icon" href="/style/images/icons/apple-icon.png" />
-    <meta name="theme-color" content="black" />
+    <link rel="apple-touch-icon" href="/styles/images/icons/apple-icon.png" />
     <link
       rel="preload"
       href="/fonts/TradeGothic.woff2"
@@ -67,18 +87,17 @@
       type="font/woff2"
       crossorigin
     />
+    <!-- Scripts -->
+    <script defer src="scripts/micromodal.min.js"></script>
+    <script defer src="scripts/index.js"></script>
+    <script defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <body>
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
-          <img
-            src="/style/images/logo.svg"
-            width="50px"
-            height="35px"
-            alt="SNKRS Logo"
-          />
+          <img src="/styles/images/logo.svg" alt="SNKRS Logo" />
         </div>
         <strong id="str">NIKE RU RELEASE CHECKER</strong>
       </div>
@@ -109,11 +128,11 @@
           switch (window.navigator.platform) {
             case 'Win32':
               outputBlock.innerHTML =
-                '<p>or check console <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd></p>'
+                '<p>or check console <kbd>Ctrl</kbd> + <kbd style="padding: 6px 16px">Shift</kbd> + <kbd style="padding: 6px 12px">j</kbd></p>'
               break
             case 'MacIntel':
               outputBlock.innerHTML =
-                '<p>or check console <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>j</kbd></p>'
+                '<p>or check console <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd style="padding: 6px 12px">j</kbd></p>'
               break
             default:
               outputBlock.innerHTML = '<p>or check console</p>'
@@ -126,14 +145,16 @@
         <a
           class="github-button"
           href="https://github.com/whoisYeshua"
-          aria-label="Follow @whoisYeshua on GitHub."
+          data-color-scheme="no-preference: light; light: light; dark: dark;"
+          aria-label="Follow @whoisYeshua on GitHub"
           >Follow @whoisYeshua</a
         >
         <a
           class="github-button"
-          href="https://github.com/whoisYeshua/Nike-RU-console-release-checker"
+          href="https://github.com/whoisYeshua/Nike-RU-release-checker"
+          data-color-scheme="no-preference: light; light: light; dark: dark;"
           data-icon="octicon-star"
-          aria-label="Star whoisYeshua/Nike-RU-console-release-checker on GitHub."
+          aria-label="Star whoisYeshua/Nike-RU-release-checker on GitHub"
           >Star</a
         >
       </div>

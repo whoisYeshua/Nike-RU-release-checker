@@ -1,0 +1,15 @@
+:root {
+  --primay: #F7F7F7;
+  --accent: #161716;
+  --strong-grey: #6D6D6D;
+  --placeholder:var(--strong-grey);
+  --outline: var(--accent);
+  --header-border:#E5E5E5;
+  --button-bg: var(--accent);
+  --button-bg-hover: #515251;
+  --kbd-background: #fafbfc;
+  --kbd-border: #D1D5dA;
+  --product-na: #ABABAB;
+  --product-oos: #161716;
+  --footer: var(--accent)
+}
