@@ -23,8 +23,8 @@ const mobileRegexp =
 const browserRegexp = /(?<browser>Chrome|Safari|Firefox)\/?\s*(\d+)/
 
 const isMobile = mobileRegexp.test(navigator.userAgent)
-const isKnownBrowser = navigator.userAgent.match(browserRegexp)?.groups?.browser
+const knownBrowser = navigator.userAgent.match(browserRegexp)?.groups?.browser
 
-if (!isMobile && isKnownBrowser) {
-  outputBlock.innerHTML = SHOURTCUT_TAUPLES[navigator.platform][isKnownBrowser]
+if (!isMobile && knownBrowser) {
+  outputBlock.innerHTML = SHOURTCUT_TAUPLES[navigator.platform][knownBrowser]
 }
