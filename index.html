@@ -90,6 +90,7 @@
     <!-- Scripts -->
     <script defer src="scripts/micromodal.min.js"></script>
     <script defer src="scripts/index.js"></script>
+    <script defer src="scripts/userAgent.js"></script>
     <script defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
@@ -122,23 +123,7 @@
           </button>
         </div>
       </section>
-      <section class="main__output">
-        <script>
-          let outputBlock = document.querySelector('.main__output')
-          switch (window.navigator.platform) {
-            case 'Win32':
-              outputBlock.innerHTML =
-                '<p>or check console <kbd>Ctrl</kbd> + <kbd style="padding: 6px 16px">Shift</kbd> + <kbd style="padding: 6px 12px">j</kbd></p>'
-              break
-            case 'MacIntel':
-              outputBlock.innerHTML =
-                '<p>or check console <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd style="padding: 6px 12px">j</kbd></p>'
-              break
-            default:
-              outputBlock.innerHTML = '<p>or check console</p>'
-          }
-        </script>
-      </section>
+      <section class="main__main__output"></section>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
