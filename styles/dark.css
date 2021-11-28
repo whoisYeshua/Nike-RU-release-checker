@@ -2,14 +2,36 @@
   --primay: #161716;
   --accent: #F3F4F6;
   --strong-grey: #6D6D6D;
-  --placeholder: #ABABAB;
-  --outline: var(--accent);
-  --header-border:#303030;
-  --button-bg: var(--accent);
-  --button-bg-hover: var(--placeholder);
-  --kbd-background: #8A827A;
+  --light-grey: #ABABAB;
+}
+
+::placeholder {
+  --placeholder-color: var(--light-grey);
+}
+
+:focus, :focus-visible {
+  --outline-color: var(--accent);
+}
+
+kbd {
+  --kbd-bg: #8A827A;
   --kbd-border: #574F48;
+}
+
+.header {
+  --header-border:#303030;
+}
+
+.footer {
+  --footer-bg: var(--primay);
+}
+
+.btn {
+  --button-bg: var(--accent);
+  --button-bg-hover: var(--light-grey);
+}
+
+.sizes {
   --product-na: #ABABAB;
   --product-oos: #161716;
-  --footer: var(--primay);
 }

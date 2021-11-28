@@ -14,8 +14,23 @@
 }
 
 ::placeholder {
-  color: var(--placeholder);
+  color: var(--placeholder-color);
 }
+
+:focus {
+  outline-offset: 0.125rem;
+  outline: 2px solid var(--outline-color);
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  outline-offset: 0.125rem;
+  outline: 2px solid var(--outline-color);
+}
+
 
 a {
   text-decoration: none;
@@ -38,26 +53,12 @@ body {
 }
 
 kbd {
-  background-color: var(--kbd-background);
+  background-color: var(--kbd-bg);
   border: 1px solid var(--kbd-border);
   border-radius: 6px;
   box-shadow: inset 0 -1px 0 var(--kbd-border);
   font: inherit;
   padding: 6px 6px;
-}
-
-input:focus ,.btn:focus {
-  outline-offset: 0.125rem;
-  outline: 2px solid var(--outline);
-}
-
-input:focus:not(:focus-visible),.btn:focus:not(:focus-visible) {
-  outline: none;
-}
-
-input:focus-visible ,.btn:focus-visible {
-  outline-offset: 0.125rem;
-  outline: 2px solid var(--outline);
 }
 
 .header {
@@ -130,7 +131,7 @@ input:focus-visible ,.btn:focus-visible {
 .footer {
   padding: 10px 15px;
 
-  background-color: var(--footer);
+  background-color: var(--footer-bg);
 }
 
 .footer__wrapper {
