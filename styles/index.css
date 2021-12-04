@@ -58,7 +58,7 @@ body {
   min-height: 100%;
 
   color: var(--accent);
-  font-family: "Trade Gothic", sans-serif;
+  font-family: "Trade Gothic", fantasy, Helvetica, sans-serif;
 
   background-color: var(--primay);
 }
