@@ -30,9 +30,7 @@ the region, select the appropriate one at `marketplace()` & `language()`
 
 ## UI preview:
 
-[**Demo**](https://nike-ru-release-checker-by-whoisyeshua.netlify.app/)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d7892ce3-2f26-46e4-ae7d-f7e5cadb15a6/deploy-status)](https://app.netlify.com/sites/nike-ru-release-checker-by-whoisyeshua/deploys)
+[**Demo**](https://whoisyeshua.github.io/Nike-RU-release-checker/)
 
 ![Imgur](https://i.imgur.com/nRH2Ipo.jpg)
 
