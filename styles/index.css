@@ -277,8 +277,7 @@ a {
 }
 
 .switcher:focus-within {
-  outline: 2px solid var(--white);
-  outline-offset: 0.125rem;
+  box-shadow: 0px 0px 0px 2px var(--white);
 }
 
 /* Switcher Label */
@@ -295,6 +294,7 @@ a {
 
 .switcher__radio {
   appearance: none;
+  -webkit-appearance: none;
 }
 
 .switcher__radio:checked {
