@@ -1,7 +1,8 @@
+/* Root & Default override */
+
 :root {
-  --primay: #F7F7F7;
-  --accent: #161716;
-  --strong-grey: #6D6D6D;
+  --primay: var(--white);
+  --accent: var(--black);
 }
 
 ::placeholder {
@@ -12,23 +13,33 @@
   --outline-color: var(--accent);
 }
 
+/* Keyboard Input element */
+
 kbd {
   --kbd-bg: #fafbfc;
   --kbd-border: #D1D5dA;
 }
 
+/* Header */
+
 .header {
   --header-border:#E5E5E5;
 }
+
+/* Footer */
 
 .footer {
   --footer-bg: var(--accent)
 }
 
+/* Button */
+
 .btn {
   --button-bg: var(--accent);
   --button-bg-hover: #515251;
 }
+
+/* Product sizes */
 
 .sizes {
   --product-na: #ABABAB;

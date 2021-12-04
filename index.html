@@ -12,12 +12,10 @@
     <meta property="og:description" content="Simple Nike RU stock checker" />
     <meta
       property="og:url"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/"
-    />
+      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/" />
     <meta
       property="og:image"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/styles/images/icons/180.png"
-    />
+      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/assets/header-icons/180.png" />
     <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nike RU release checker" />
@@ -25,69 +23,60 @@
     <meta name="twitter:creator" content="@YeshuaWhois" />
     <meta
       name="twitter:image"
-      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/styles/images/icons/180.png"
-    />
+      content="https://nike-ru-release-checker-by-whoisyeshua.netlify.app/assets/header-icons/180.png" />
     <!-- Styles -->
     <meta name="color-scheme" content="light dark" />
     <meta
       name="theme-color"
       media="(prefers-color-scheme: light)"
-      content="#F7F7F7"
-    />
+      content="#F7F7F7" />
     <meta
       name="theme-color"
       media="(prefers-color-scheme: dark)"
-      content="#161716"
-    />
+      content="#161716" />
     <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
     <link rel="stylesheet" type="text/css" href="styles/modal.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="styles/light.css"
-      media="(prefers-color-scheme: light)"
-    />
+      media="(prefers-color-scheme: light)" />
     <link
       rel="stylesheet"
       type="text/css"
       href="styles/dark.css"
-      media="(prefers-color-scheme: dark)"
-    />
+      media="(prefers-color-scheme: dark)" />
     <link rel="stylesheet" type="text/css" href="styles/index.css" />
     <!-- Icons -->
     <link
       rel="icon"
       type="image/png"
       sizes="180x180"
-      href="/styles/images/icons/180.png"
-    />
+      href="/assets/header-icons/180.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/styles/images/icons/32.png"
-    />
+      href="/assets/header-icons/32.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/styles/images/icons/16.png"
-    />
+      href="/assets/header-icons/16.png" />
     <link
       rel="icon"
       type="image/svg+xml"
       sizes="any"
-      href="/styles/images/icons/swoosh.svg"
-    />
-    <link rel="apple-touch-icon" href="/styles/images/icons/apple-icon.png" />
+      href="/assets/header-icons/swoosh.svg" />
+    <link rel="apple-touch-icon" href="/assets/header-icons/apple-icon.png" />
     <link
       rel="preload"
       href="/fonts/TradeGothic.woff2"
       as="font"
       type="font/woff2"
-      crossorigin
-    />
+      crossorigin />
     <!-- Scripts -->
+    <script defer src="scripts/shemeSwitcher.js"></script>
     <script defer src="scripts/micromodal.min.js"></script>
     <script defer src="scripts/index.js"></script>
     <script defer src="scripts/userAgent.js"></script>
@@ -95,19 +84,21 @@
   </head>
 
   <body>
+    <!-- Header -->
     <header class="header">
       <div class="header__wrapper">
         <div class="header__logo">
           <img
-            src="/styles/images/logo.svg"
+            src="/assets/logo.svg"
             width="50px"
             height="35px"
-            alt="SNKRS Logo"
-          />
+            alt="SNKRS Logo" />
         </div>
         <strong id="str">NIKE RU RELEASE CHECKER</strong>
       </div>
     </header>
+
+    <!-- Main -->
     <main class="main">
       <section class="main__input">
         <div class="main__input-block">
@@ -116,50 +107,103 @@
             id="url"
             type="url"
             placeholder="PASTE PRODUCT URL"
-            aria-label="Add a link to the product."
-          />
+            aria-label="Add a link to the product." />
           <button
             class="btn"
             id="check"
             title="Get product information"
-            aria-label="Get product information."
-          >
+            aria-label="Get product information.">
             Check URL
           </button>
         </div>
       </section>
       <section class="main__output"></section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer__wrapper">
+        <!-- GitHub Buttons -->
         <a
           class="github-button"
           href="https://github.com/whoisYeshua"
           data-color-scheme="no-preference: light; light: light; dark: dark;"
-          aria-label="Follow @whoisYeshua on GitHub"
-          >Follow @whoisYeshua</a
-        >
+          data-size="large"
+          aria-label="Follow @whoisYeshua on GitHub">
+          Follow @whoisYeshua
+        </a>
         <a
           class="github-button"
           href="https://github.com/whoisYeshua/Nike-RU-release-checker"
           data-color-scheme="no-preference: light; light: light; dark: dark;"
           data-icon="octicon-star"
-          aria-label="Star whoisYeshua/Nike-RU-release-checker on GitHub"
-          >Star</a
-        >
+          data-size="large"
+          aria-label="Star whoisYeshua/Nike-RU-release-checker on GitHub">
+          Star
+        </a>
+
+        <!-- Theme Switcher -->
+        <fieldset class="switcher">
+          <label class="switcher__label" tabindex="-1">
+            <input
+              type="radio"
+              class="switcher__radio"
+              name="color-scheme"
+              value="light"
+              aria-label="Light theme" />
+            <img
+              class="switcher__icon"
+              src="../assets/switcher/light.svg"
+              width="24px"
+              height="24px"
+              title="Light theme"
+              alt="Light theme" />
+          </label>
+
+          <label class="switcher__label" tabindex="-1">
+            <input
+              type="radio"
+              class="switcher__radio"
+              name="color-scheme"
+              value="auto"
+              aria-label="System theme"
+              checked />
+            <img
+              class="switcher__icon"
+              src="../assets/switcher/auto.svg"
+              width="24px"
+              height="24px"
+              title="System theme"
+              alt="System theme" />
+          </label>
+          <label class="switcher__label" tabindex="-1">
+            <input
+              type="radio"
+              class="switcher__radio"
+              name="color-scheme"
+              value="dark"
+              aria-label="Dark theme" />
+            <img
+              class="switcher__icon"
+              src="../assets/switcher/dark.svg"
+              width="24px"
+              height="24px"
+              title="Dark theme"
+              alt="Dark theme" />
+          </label>
+        </fieldset>
       </div>
     </footer>
-    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <!-- <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
         <div
           class="modal__container"
           role="dialog"
           aria-modal="true"
-          aria-labelledby="modal-1."
-        >
+          aria-labelledby="modal-1.">
           <main class="modal__content" id="modal-1-content"></main>
         </div>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
