@@ -293,13 +293,13 @@ a {
 /* Switcher Radio */
 
 .switcher__radio {
+  position: absolute;
+
   appearance: none;
   -webkit-appearance: none;
 }
 
 .switcher__radio:checked {
-  position: absolute;
-
   width: 28px;
   height: 28px;
   border-radius: 16px;
