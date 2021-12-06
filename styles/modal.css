@@ -48,6 +48,7 @@
   left: 0;
 
   display: flex;
+  padding: 2rem;
 
   background: rgba(0, 0, 0, 0.6);
 
@@ -113,8 +114,6 @@
 }
 
 .modal__btn {
-  line-height: 2.5;
-
   overflow: visible;
 
   transition: -webkit-transform 0.25s ease-out;

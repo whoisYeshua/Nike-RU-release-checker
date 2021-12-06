@@ -50,6 +50,12 @@ html {
   height: 100%;
 }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 /* Body */
 
 body {
@@ -101,12 +107,13 @@ a {
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
-  max-width: calc(50vw + 7.125rem);
+  max-width: calc(50vw + 5.75rem);
 
   font-size: 1.5rem;
+  text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
   .header__wrapper {
     max-width: none;
   }
@@ -127,13 +134,13 @@ a {
   flex-flow: row;
   align-items: center;
   justify-content: space-evenly;
-  padding: 1.25rem .625rem;
+  padding: 1.25rem 0;
 }
 
 .main__input-block {
   display: flex;
   flex-flow: row;
-  gap: 1.25rem;
+  gap: min(2vw, 1.25rem);
   justify-content: space-between;
 }
 
@@ -159,7 +166,8 @@ a {
 .footer__wrapper {
   display: flex;
   flex-flow: row;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  gap: min(2vh, 1.25rem);
   align-items: center;
   justify-content: center;
 }
@@ -175,8 +183,7 @@ a {
 /* Button */
 
 .btn {
-  width: 6.25rem;
-  height: 2.5rem;
+  padding: 0.675rem 1.15rem;
   border: none;
   border-radius: 1rem;
 
@@ -204,7 +211,7 @@ a {
 .input {
   flex-grow: 1;
   padding: 0 1rem;
-  width: 15rem;
+  width: max(10rem, 25vw);
   border: .125rem solid var(--accent);
   border-radius: 1rem;
 
