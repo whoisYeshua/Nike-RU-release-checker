@@ -43,6 +43,10 @@
   outline-offset: .125rem;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* HTML */
 
 html {
@@ -61,7 +65,6 @@ html {
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  box-sizing: border-box;
   min-height: 100%;
 
   color: var(--accent);
@@ -133,7 +136,7 @@ a {
   flex: none;
   flex-flow: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   padding: 1.25rem 0;
 }
 
@@ -141,6 +144,7 @@ a {
   display: flex;
   flex-flow: row;
   gap: min(2vw, 1.25rem);
+  width: clamp(10rem, 100%, 40rem);
   justify-content: space-between;
 }
 
@@ -211,12 +215,10 @@ a {
 .input {
   flex-grow: 1;
   padding: 0 1rem;
-  width: max(10rem, 25vw);
   border: .125rem solid var(--accent);
   border-radius: 1rem;
 
   color: var(--accent);
-  font-size: 1rem;
 
   background-color: var(--primay);
 }
