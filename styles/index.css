@@ -50,8 +50,9 @@
 /* HTML */
 
 html {
-  font-size: 16px;
   height: 100%;
+
+  font-size: 16px;
 }
 
 @media (max-width: 480px) {
@@ -144,8 +145,8 @@ a {
   display: flex;
   flex-flow: row;
   gap: min(2vw, 1.25rem);
-  width: clamp(10rem, 100%, 40rem);
   justify-content: space-between;
+  width: clamp(10rem, 100%, 40rem);
 }
 
 .main__output {
@@ -178,10 +179,10 @@ a {
 
 /* SVG */
 .svg {
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
   -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 /* Button */
@@ -319,15 +320,16 @@ a {
 .switcher__radio {
   position: absolute;
 
-  appearance: none;
   -webkit-appearance: none;
+
+  appearance: none;
 }
 
 .switcher__radio:checked {
   width: 28px;
   height: 28px;
   border-radius: 16px;
-
+  
   background-color: var(--white);
   outline: none;
 }
