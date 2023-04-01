@@ -5,15 +5,15 @@ const SHOURTCUT_TAUPLES = {
     Chrome:
       '<p>or check console <kbd class="kbd-default">Ctrl</kbd> + <kbd class="kbd-large">Shift</kbd> + <kbd class="kbd-default">j</kbd></p>',
     Firefox:
-      '<p>or check console <kbd class="kbd-default>Ctrl</kbd> + <kbd class="kbd-large">Shift</kbd> + <kbd class="kbd-default">j</kbd></p>',
+      '<p>or check console <kbd class="kbd-default">Ctrl</kbd> + <kbd class="kbd-large">Shift</kbd> + <kbd class="kbd-default">j</kbd></p>',
   },
   MacIntel: {
     Chrome:
-      '<p>or check console <kbd class="kbd-default>⌘</kbd> + <kbd class="kbd-default>⌥</kbd> + <kbd class="kbd-default">j</kbd></p>',
+      '<p>or check console <kbd class="kbd-default">⌘</kbd> + <kbd class="kbd-default>⌥</kbd> + <kbd class="kbd-default">j</kbd></p>',
     Firefox:
-      '<p>or check console <kbd class="kbd-default>⌘</kbd> + <kbd class="kbd-large">⇧ Shift</kbd> + <kbd class="kbd-default">j</kbd></p>',
+      '<p>or check console <kbd class="kbd-default">⌘</kbd> + <kbd class="kbd-large">⇧ Shift</kbd> + <kbd class="kbd-default">j</kbd></p>',
     Safari:
-      '<p>or check console <kbd class="kbd-default>⌘</kbd> + <kbd class="kbd-default>⌥</kbd> + <kbd class="kbd-default">c</kbd></p>',
+      '<p>or check console <kbd class="kbd-default">⌘</kbd> + <kbd class="kbd-default">⌥</kbd> + <kbd class="kbd-default">c</kbd></p>',
   },
 }
 
